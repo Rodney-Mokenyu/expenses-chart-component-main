@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expenses Chart</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div>
+      <span>My balance</span><br />
+      <strong>$921.48</strong>
+    </div>
+    <img src="./images/logo.svg" alt="Logo" class="img-fluid" />
+  </header>
+
+  <main>
+    <h1>Spending - Last 7 days</h1>
+
+    <section id="chart-section">
+      <!-- Bars will be injected by JS -->
+    </section>
+
+    <hr />
+
+    <section id="summary-section">
+      <aside>
+        <p>Total this month</p>
+        <p id="total-spent"><strong>$478.33</strong></p>
+      </aside>
+      <aside>
+        <p id="monthly-percentage"><strong>+2.4%</strong></p>
+        <span>from last month</span>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Oracle of Omaha</a>.
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

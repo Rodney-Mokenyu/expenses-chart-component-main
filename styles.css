@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red-500: hsl(10, 79%, 65%);
+  --blue-300: hsl(186, 34%, 65%);
+  --brown-950: hsl(25, 47%, 15%);
+  --brown-400: hsl(28, 10%, 53%);
+  --red-100: hsl(26, 66%, 93%);
+}
+
+body, html {
+  height: 100vh;
+  width: 100vw;
+  font-size: 18px;
+  font-family: 'DM Sans', 'Courier New', Courier, monospace;
+  background-color: var(--red-100);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--red-500);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto;
+  color: var(--red-100);
+  max-width: 400px;
+}
+
+header strong {
+  font-size: 1.5rem;
+}
+
+main {
+  background-color: var(--red-100);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+main h1 {
+  font-size: 1.5rem;
+  color: var(--brown-950);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: var(--red-500);
+  margin: 1rem 0;
+}
+
+#chart-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  padding: 1rem 0;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 40px;
+}
+
+.amount {
+  margin-bottom: 6px;
+  background-color: var(--brown-950);
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 5px;
+  display: none;
+}
+
+.bar-container:hover .amount {
+  display: block;
+}
+
+.bar {
+  width: 100%;
+  background-color: var(--red-500);
+  border-radius: 5px 5px 0 0;
+}
+
+.bar.today {
+  background-color: var(--blue-300);
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+.day {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--brown-400);
+}
+
+#summary-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#total-spent {
+  font-size: 1.5rem;
+}
+
+footer.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+}
+
+footer.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header, main, footer {
+    width: 100%;
+    max-width: 400px;
+  }
+}
