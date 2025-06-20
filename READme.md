@@ -42,8 +42,8 @@ This challenge was particularly interesting because it focused heavily on integr
 
 ### Links
 
-* **Live Site URL:** [https://your-live-site-url.com](https://your-live-site-url.com)
-* **Solution URL on Frontend Mentor:** [https://www.frontendmentor.io/solutions/your-solution](https://www.frontendmentor.io/solutions/your-solution)
+* **Live Site URL:** https://rodney-mokenyu.github.io/expenses-chart-component-main/
+* **Solution URL on Frontend Mentor:** https://github.com/Rodney-Mokenyu/expenses-chart-component-main
 
 ---
 
